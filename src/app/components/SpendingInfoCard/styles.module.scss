@@ -8,7 +8,7 @@
   border: solid 1px $shade-color-darker;
 
   h3 {
-    font-size: x-large;
+    font-size: large;
     border-bottom: 1rem;
   }
 }
@@ -46,7 +46,7 @@
 
 .spending_info {
   :first-child {
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
     margin-bottom: 0.2rem;
   }
