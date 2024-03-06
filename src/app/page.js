@@ -37,13 +37,6 @@ export default function Home() {
         <SpendingInfoCard />
         <PremiumOfferCard />
       </div>
-      {/* <div className={styles.content_wrapper}>
-        {
-          [...Array(4)].map((_, id) => (
-            <div key={`content-${id}`} className={`${styles.content} ${styles[`content_${id}`]}`}></div>
-          ))
-        }
-      </div> */}
     </main>
   );
 }

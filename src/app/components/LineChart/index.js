@@ -29,7 +29,7 @@ export default function LineChart({ width = 600, height = 300 }) {
     ctx.strokeStyle = '#ccc'; // Color for the Cartesian graph lines
     ctx.lineWidth = 1;
     
-    // Vertical lines
+    // From y-axis draw Horizontal lines
     for (let i = 0; i <= divValue; i++) {
       const y = height - padding - (i * (height - 2 * padding)) / divValue;
       ctx.moveTo(padding, y);
@@ -38,10 +38,10 @@ export default function LineChart({ width = 600, height = 300 }) {
       ctx.font = 'bold 12px Arial';
       ctx.fillStyle = '#000';
       const value = Math.round(maxValue - maxValue * (divValue - i) / divValue);
-      ctx.fillText(value.toString(), padding - 20, y + 5); // Adjust label position as needed
+      ctx.fillText(value.toString(), padding - 20, y + 5);
     }
 
-    // Horizontal lines
+    // From x-axis draw Vertical lines
     for (let i = 0; i < DATA.length; i++) {
       const x = padding + i * pointWidth;
       ctx.moveTo(x, padding);
@@ -52,7 +52,7 @@ export default function LineChart({ width = 600, height = 300 }) {
     // Draw the data points and connect them with lines
     ctx.beginPath();
     ctx.moveTo(padding, height - padding - DATA[0] * pointHeight);
-    ctx.strokeStyle = '#4A90E2'; // Color for the line chart
+    ctx.strokeStyle = '#4A90E2';
     ctx.lineWidth = 2; //
     for (let i = 1; i < DATA.length; i++) {
       const x = padding + i * pointWidth;
@@ -63,7 +63,7 @@ export default function LineChart({ width = 600, height = 300 }) {
       // Draw dot for each data point
       ctx.beginPath();
       ctx.arc(x, y, 4, 0, 2 * Math.PI);
-      ctx.fillStyle = '#4A90E2'; // Dot color
+      ctx.fillStyle = '#4A90E2';
       ctx.fill();
     }
     ctx.stroke();

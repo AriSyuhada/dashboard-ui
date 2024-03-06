@@ -27,9 +27,8 @@ export default function PieChart({ width = 600, height = 300 }) {
 
       // Set fill color
       const baseColors = ['#DAF7A6', '#FFC300', '#FF5733', '#7DCEA0', '#4A90E2'];
-      // const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-      const randomIndex = i % baseColors.length;;
-      const color = baseColors[randomIndex];
+      const colorIndex = i % baseColors.length;;
+      const color = baseColors[colorIndex];
       ctx.fillStyle = color;
 
       // Draw segment
@@ -43,8 +42,8 @@ export default function PieChart({ width = 600, height = 300 }) {
       startAngle += sliceAngle;
 
       // Legend Coordinate
-      const labelStartX = 40; // Starting x-coordinate for labels
-      const labelY = height - 10; // Y-coordinate for labels
+      const labelStartX = 40;
+      const labelY = height - 10;
       const labelSpacing = (width - labelStartX) / DATA.length;
       const labelX = labelStartX + i * labelSpacing;
 
@@ -52,7 +51,6 @@ export default function PieChart({ width = 600, height = 300 }) {
       ctx.fillRect(labelX - 15, labelY - 10, 10, 10);
       ctx.fillStyle = '#000';
       ctx.font = 'bold 12px Arial';
-      // ctx.fillText(`${DATA[i] / total * 100}% ${LABELS[i]}`, width - 80, i * 30 + 20);
       ctx.fillText(`${DATA[i] / total * 100}% ${LABELS[i]}`, labelX, labelY);
     }
   }, [DATA, LABELS, width, height]);

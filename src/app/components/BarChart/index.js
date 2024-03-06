@@ -33,11 +33,12 @@ export default function BarChart({ width = 400, height = 300 }) {
     ctx.strokeStyle = '#ccc'; // Color for the Cartesian graph lines
     ctx.lineWidth = 1;
 
-    // Vertical lines
+    // From y-axis draw Horizontal lines
     for (let i = 0; i <= divValue; i++) {
       const y = height - padding - (i * (height - 2 * padding)) / divValue;
       ctx.moveTo(padding, y);
       ctx.lineTo(width - padding, y);
+
       // Draw labels on the y-axis
       ctx.font = 'bold 12px Arial';
       ctx.fillStyle = '#000';
@@ -45,11 +46,13 @@ export default function BarChart({ width = 400, height = 300 }) {
       ctx.fillText(value.toString(), padding - 20, y); // Adjust label position as needed
     }
 
-    // Horizontal lines
+    // From x-axis draw Vertical lines
     for (let i = 0; i < DATA.length; i++) {
-      const x = padding + i * barWidth;
-      ctx.moveTo(x, padding);
-      ctx.lineTo(x, height - padding);
+      if (i === 0) {
+        const x = padding + i * barWidth;
+        ctx.moveTo(x, padding);
+        ctx.lineTo(x, height - padding);
+      }
     }
     ctx.stroke();
 
@@ -57,7 +60,7 @@ export default function BarChart({ width = 400, height = 300 }) {
     for (let i = 0; i < DATA.length; i++) {
       const barHeight = DATA[i] * heightScale;
 
-      // Set fill color (random color for each bar)
+      // Set fill color 
       const randomIndex = i % baseColors.length;;
       const color = baseColors[randomIndex];
       ctx.fillStyle = color;
