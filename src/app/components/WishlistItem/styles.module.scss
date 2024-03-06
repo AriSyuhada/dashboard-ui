@@ -6,16 +6,20 @@
   justify-content: space-between;
   align-items: center;
   background-color: $shade-color;
-  padding: 0.4rem;
-  border-radius: 0.4rem;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
 
   div {
     display: flex;
     flex-direction: row;
-    gap: 0.4rem;
+    gap: 0.6rem;
 
     input {
       cursor: pointer;
+    }
+
+    label {
+      text-overflow: ellipsis;
     }
   }
 

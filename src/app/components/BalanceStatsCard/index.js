@@ -31,17 +31,17 @@ export default function BalanceStatsCard({ className, balance = 564 }) {
             isIncrease
             ?
               <div className={`${styles.trend} ${styles.trend_up}`}>
-                <FaArrowTrendUp size={22} />
+                <FaArrowTrendUp size={24} />
                 <p>6%</p>
               </div>
             :
               <div className={`${styles.trend} ${styles.trend_down}`}>
-                <FaArrowTrendDown size={22} />
+                <FaArrowTrendDown size={24} />
                 <p>6%</p>
               </div>
           }
         </div>
-        <BarChart width={325} height={175} />
+        <BarChart width={325} height={200} />
       </div>
     </div>
   );

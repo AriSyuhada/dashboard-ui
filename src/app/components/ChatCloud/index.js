@@ -11,8 +11,8 @@ export default function ChatCloud({ className, message, isSender }) {
           className={`${isSender ? styles.sender_picture : styles.receiver_picture}`}
           src={isSender ? senderPic : receiverPic}
           alt={isSender ? "Sender Picture" : "Receiver Picture"}
-          width={36}
-          height={36}
+          width={48}
+          height={48}
         />
       </div>
       <p className={`${styles.message} ${isSender ? styles.sender_message : styles.receiver_message}`}>{message}</p>

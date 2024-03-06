@@ -35,8 +35,8 @@ export default function ChatCard({ className }) {
         </textarea>
         <div className={styles.chat_buttons}>
           <div className={styles.chat_attachment}>
-            <FaRegFaceSmile className={styles.icon_button} size={16}/>
-            <FaPaperclip className={styles.icon_button} size={16} />
+            <FaRegFaceSmile className={styles.icon_button} size={22}/>
+            <FaPaperclip className={styles.icon_button} size={22} />
           </div>
           <Button small placeholder="Send now" />
         </div>

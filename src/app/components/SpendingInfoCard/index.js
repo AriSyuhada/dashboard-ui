@@ -41,8 +41,8 @@ export default function SpendingInfoCard({ className }) {
                 <Image 
                   src={s.pictSrc}
                   alt={`${s.name} picture`}
-                  width={36}
-                  height={36}
+                  width={48}
+                  height={48}
                 />
               </div>
               <div className={styles.spending_info}>
