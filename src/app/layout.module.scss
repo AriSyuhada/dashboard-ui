@@ -1,0 +1,13 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+.navbar {
+  flex-basis: 5vw;
+}

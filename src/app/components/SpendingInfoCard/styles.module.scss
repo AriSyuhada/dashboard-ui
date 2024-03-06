@@ -1,0 +1,67 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px $shade-color-darker;
+
+  h3 {
+    font-size: x-large;
+    border-bottom: 1rem;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  :last-child {
+    border: none !important;
+  }
+}
+
+.spending_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 0;
+  border-bottom: solid 1px $shade-color-darker;
+}
+
+.illustration_wrapper {
+  background-color: $secondary-color-light;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.spending_info {
+  :first-child {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+}
+
+.more_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  gap: 0.6rem;
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.more_button:hover {
+  opacity: 80%;
+}

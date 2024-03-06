@@ -1,0 +1,77 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px $shade-color-darker;
+  gap: 1.4rem;
+
+  h3 {
+    font-size: x-large;
+  }
+}
+
+.comparison {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense {
+  text-align: left;
+}
+
+.income {
+  text-align: right;
+}
+
+.label {
+  font-size: large;
+  font-weight: 600;
+}
+
+.percentage {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.versus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+
+  div {
+    content: "";
+    min-height: 1.2rem;
+    border-left: solid 2px black;
+  }
+
+  p {
+    font-size: x-large;
+    font-weight: bold;
+  }
+}
+
+.bar_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}
+
+.bar {
+  height: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.expense_bar {
+  background-color: $primary-color;
+}
+
+.income_bar {
+  background-color: $secondary-color;
+}

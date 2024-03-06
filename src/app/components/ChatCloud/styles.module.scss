@@ -1,0 +1,47 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.sender_cloud {
+  flex-direction: row-reverse;
+  justify-self: end;
+}
+
+.receiver_cloud {
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.picture_wrapper {
+  border-radius: 4rem;
+  overflow: hidden;
+}
+
+.sender_picture {
+  background-color: $primary-color-light;
+}
+
+.receiver_picture {
+  background-color: $primary-color;
+}
+
+.message {
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  overflow-wrap: break-all;
+}
+
+.sender_message {
+  background-color: $primary-color;
+  border-bottom-right-radius: 0 !important;
+  color: white;
+}
+
+.receiver_message {
+  background-color: $shade-color;
+  border-bottom-left-radius: 0 !important;
+}

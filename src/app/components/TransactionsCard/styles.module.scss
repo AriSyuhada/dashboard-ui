@@ -1,0 +1,45 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rem;
+
+  h3 {
+    font-size: x-large;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+}
+
+.active_filter {
+  border-bottom: solid 2px $shade-color-darker;
+  font-weight: 600;
+}
+
+.filter_button {
+  padding-bottom: 0.4rem;
+}
+
+.transactions_wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-top: solid 1px $shade-color-darker;
+  border-bottom: solid 1px $shade-color-darker;
+}

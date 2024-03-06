@@ -1,0 +1,40 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: solid $shade-color-darker 1px;
+  padding: 0.7rem;
+  min-width: 30vw;
+}
+
+.user_peer_info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    :first-child {
+      font-size: large;
+      font-weight: bold;
+    }
+  }
+}
+
+.user_pict {
+  background-color: $secondary-color-light;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.transactions_info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}

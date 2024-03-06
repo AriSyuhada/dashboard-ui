@@ -1,0 +1,62 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  min-width: 32vw;
+  max-width: 32vw;
+
+  h3 {
+    font-size: x-large;
+  }
+}
+
+.chat_input {
+  display: flex;
+  flex-direction: column;
+  background-color: $shade-color;
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  width: 100%;
+
+  textarea {
+    background-color: inherit;
+    resize: none;
+    overflow-y: auto;
+    border: none;
+    height: 3rem;
+    font-size: large;
+  }
+}
+
+.chat_room {
+  background-color: white;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon_button {
+  cursor: pointer;
+}
+
+.icon_button:hover {
+  opacity: 50%;
+}
+
+.chat_attachment {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}

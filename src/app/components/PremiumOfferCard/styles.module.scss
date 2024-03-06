@@ -1,0 +1,25 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid 1px $shade-color-darker;
+  gap: 0.2rem;
+
+  h3 {
+    font-size: x-large;
+  }
+}
+
+.title {
+  align-self: center;
+  font-weight: 600;
+  font-size: large;
+}
+
+.details {
+  font-size: large;
+  margin-bottom: 0.4rem;
+}

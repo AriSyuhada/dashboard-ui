@@ -1,0 +1,30 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  border: none;
+  background-color: $primary-color;
+  color: white;
+  font-weight: 600;
+}
+
+.container:hover {
+  opacity: 80%;
+}
+
+.regular {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.small {
+  padding: 0.4rem 0.8rem !important;
+  border-radius: 0.3rem !important;
+  font-size: small !important;
+}
+
+.large {
+  padding: 1rem !important;
+  flex: 1 1 auto;
+  border-radius: 0.8rem !important;
+  font-size: large;
+}

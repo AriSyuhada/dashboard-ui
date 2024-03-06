@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  min-width: 32vw;
+  max-width: 32vw;
+  
+  h3 {
+    font-size: x-large;
+  }
+}
+
+.time_frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.time_details {
+  :first-child {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+.wishlist_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.wishlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.wishlist_item {
+  flex-basis: calc(50% - 1rem);
+}
+
+.invisible_item {
+  min-width: calc(50% - 1rem);
+}

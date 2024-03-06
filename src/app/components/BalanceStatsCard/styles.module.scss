@@ -1,0 +1,73 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  min-width: 30vw;
+  // min-height: 30vh;
+  // max-height: 30vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  h3 {
+    font-size: x-large;
+  }
+
+  div {
+    background-color: $shade-color;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    
+    select {
+      background-color: inherit;
+      border: none;
+      // appearance: none;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+}
+
+.overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  div {
+    h4 {
+      font-size: xx-large;
+      margin-bottom: 0.2rem;
+    }
+    p {
+      font-size: x-large;
+    }
+  }
+}
+
+.trend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: bold;
+}
+
+.trend_up {
+  color: lightgreen;
+}
+
+.trend_down {
+  color: lightcoral;
+}

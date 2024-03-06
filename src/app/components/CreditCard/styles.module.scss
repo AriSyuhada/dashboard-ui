@@ -1,0 +1,50 @@
+@import "../../utilities/variable.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $primary-color;
+  color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  min-width: 26rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-size: xx-large;
+  }
+}
+
+.illustration {
+  position: absolute;
+  top: calc((30vh / 2) - (229px / 2));
+  left: calc((26rem / 2) - (250px / 2));
+  z-index: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 1;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-weight: bold;
+
+    h4 {
+      font-size: x-large;
+    }
+  }
+}
