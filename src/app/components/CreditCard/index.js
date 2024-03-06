@@ -13,8 +13,8 @@ export default function CreditCard({ className }) {
       <Image 
         src={illustrationPic}
         alt="Visa Card Illustration"
-        height={229}
-        width={250}
+        height={200}
+        // width={250}
         className={styles.illustration}
       />
       <div className={styles.footer}>

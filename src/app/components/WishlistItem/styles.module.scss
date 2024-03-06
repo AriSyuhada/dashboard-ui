@@ -6,13 +6,13 @@
   justify-content: space-between;
   align-items: center;
   background-color: $shade-color;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
 
   div {
     display: flex;
     flex-direction: row;
-    gap: 0.6rem;
+    gap: 0.4rem;
 
     input {
       cursor: pointer;

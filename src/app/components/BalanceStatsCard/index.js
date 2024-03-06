@@ -41,7 +41,7 @@ export default function BalanceStatsCard({ className, balance = 564 }) {
               </div>
           }
         </div>
-        <BarChart width={350} height={200} />
+        <BarChart width={325} height={175} />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export default function AnalyticsToDoCard({ className }) {
           <FaEllipsisVertical size={22} />
         </button>
       </div>
-      <PieChart width={375} height={200} />
+      <PieChart width={350} height={175} />
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function PremiumOfferCard({ className }) {
       <Image 
         src={illustrationPic}
         alt="Premium picture illustration"
-        height={96}
+        height={80}
       />
       <h3>Need more features?</h3>
       <p className={styles.details}>Update your account to premium to get more features</p>
